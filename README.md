@@ -1,4 +1,3 @@
-
 # 🌊 FloodSiren
 ### Turning Flood Risk Into Warnings People Can Act On
 
@@ -204,7 +203,7 @@ The goal is to turn fragmented environmental information into a clearer picture 
 
 ## 👥 Team and Responsibilities
 
-### Ayanda — Backend, Database & Predictive Data Lead
+### Ayanda Sibanda — Backend, Database & Predictive Data Lead
 
 Responsible for backend logic, risk-engine development, data handling, and security.
 
@@ -230,62 +229,6 @@ Responsible for the user-facing experience and product presentation.
 
 ---
 
-## 🔐 Security and Secure Software Development Lifecycle (SSDLC)
-
-Security is essential for a platform intended to communicate public-safety information.
-
-The following controls form part of FloodSiren's security approach and should be verified against the actual implementation before being described as completed.
-
-### Secrets Management
-
-- Store local development secrets in ignored environment files.
-- Exclude `.env` files and private credentials from version control.
-- Configure production secrets through the appropriate hosting environment.
-- Never expose service-account private keys or privileged credentials through `NEXT_PUBLIC_` variables.
-
-Firebase web configuration values are not equivalent to private server credentials. Access must be protected through correctly configured Firebase Security Rules and appropriate authentication and authorization controls.
-
-### Transport Security
-
-- Use HTTPS for deployed application traffic.
-- Protect backend communication with appropriate transport security.
-- Avoid transmitting sensitive information unnecessarily.
-
-### Database Security
-
-- Enforce least-privilege access.
-- Require appropriate authorization for protected operations.
-- Validate report fields, types, lengths, and allowed values.
-- Prevent users from arbitrarily modifying trusted risk assessments or administrative records.
-- Restrict access to sensitive user information.
-
-### API Security
-
-- Validate and constrain incoming requests.
-- Return appropriate HTTP status codes and safe error messages.
-- Apply request-size limits and rate limiting where appropriate.
-- Keep privileged operations on trusted server-side components.
-- Avoid exposing internal stack traces or secrets.
-
-### Data Integrity and Public Safety
-
-- Timestamp incident reports and distinguish reported observations from verified events.
-- Display the freshness and source of environmental inputs where possible.
-- Do not present unvalidated estimates as authoritative evacuation instructions.
-- Communicate uncertainty and provide appropriate safety guidance.
-
-### Security Verification Checklist
-
-- [ ] Confirm `.gitignore` excludes local environment files.
-- [ ] Verify that no credentials or private keys are committed.
-- [ ] Test Firestore Security Rules against unauthorized reads and writes.
-- [ ] Verify authentication and authorization for protected endpoints.
-- [ ] Test malformed, oversized, and unexpected API inputs.
-- [ ] Review dependency vulnerabilities.
-- [ ] Test production error handling and logging.
-- [ ] Document remaining risks and mitigations.
-
----
 
 ## 💻 Getting Started
 
@@ -482,7 +425,7 @@ Please do not commit credentials, personal information, or unverified claims abo
 
 ## 👥 Team FloodSiren
 
-**Ayanda** — Backend, Database & Predictive Data Lead  
+**Ayanda Sibanda** — Backend, Database & Predictive Data Lead  
 **Selemani Ecasa** — Frontend, UI/UX & Product Lead
 
 Built for the **FNB App of the Year Hackathon 2026**.
