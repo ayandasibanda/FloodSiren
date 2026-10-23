@@ -192,3 +192,20 @@ env/
 .vscode/
 .idea/
 
+# dotenv environment variable files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python testing and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Firebase Admin service account credentials
+serviceAccountKey.json
+service-account*.json
+*-firebase-adminsdk-*.json
