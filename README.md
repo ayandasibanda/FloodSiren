@@ -246,7 +246,7 @@ Install the following tools before starting local development:
 Replace the placeholder with the team's actual public GitHub repository URL.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/FloodSiren.git
+git clone https://github.com/ayandasibanda/FloodSiren.git
 cd FloodSiren
 ```
 
